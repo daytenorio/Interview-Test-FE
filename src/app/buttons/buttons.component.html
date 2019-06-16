@@ -1,0 +1,10 @@
+<div *ngFor="let button of buttons">
+  <input
+    class="btn {{ button.class }}-button"
+    id="{{ button.id }}"
+    type="button"
+    value="{{ button.text }}"
+    (click)="onClickMe(button.id)"
+  />
+  <app-tool-tip [toolTip]="button.toolTip"></app-tool-tip>
+</div>
