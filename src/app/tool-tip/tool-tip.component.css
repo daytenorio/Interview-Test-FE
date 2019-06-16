@@ -1,0 +1,25 @@
+/* span {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: 0.3s;
+  max-width: 75px;
+  margin: 0 5px;
+  cursor: default;
+  background: #fafafa;
+  color: #484848;
+  border: 1px solid #cccccc;
+}
+span:hover {
+  background: #fff;
+  color: #027baf;
+} */
+
+span[aria-hidden="true"] {
+  display: none;
+}
+span[aria-hidden="false"] {
+  display: block;
+}
