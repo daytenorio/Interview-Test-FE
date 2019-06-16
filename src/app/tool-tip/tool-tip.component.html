@@ -1,6 +1,9 @@
-<span
-  id="{{ toolTip.id }}"
-  role="tooltip"
-  [attr.aria-hidden]="toolTip.isHidden"
-  >{{ toolTip.text }}</span
->
+<div class="toolTipContent">
+  <span
+    class="toolTipText"
+    [attr.aria-hidden]="toolTip.isHidden"
+    id="{{ toolTip.id }}"
+    role="tooltip"
+    >{{ toolTip.text }}</span
+  >
+</div>

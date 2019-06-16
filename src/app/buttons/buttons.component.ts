@@ -24,9 +24,12 @@ export class ButtonsComponent implements OnInit {
     }
   ];
 
-  onClickMe = (buttonId: string) => {
-    this.hideToolTips();
-    this.buttons.find(b => b.id === buttonId).toolTip.isHidden = false;
+  onClick = (buttonId: string) => {
+    const toolTipStatus = this.buttons.find(b => b.id === buttonId).toolTip
+      .isHidden;
+
+    this.buttons.find(b => b.id !== buttonId).toolTip.isHidden = true;
+    this.buttons.find(b => b.id === buttonId).toolTip.isHidden = !toolTipStatus;
   };
 
   hideToolTips = () => {
