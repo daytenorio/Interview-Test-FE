@@ -20,6 +20,8 @@ span[aria-hidden="false"] {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
+  font-size: 5vw;
+  width: 60%;
 }
 .toolTipContent .toolTipText::after {
   content: "";
