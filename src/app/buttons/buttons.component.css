@@ -7,9 +7,9 @@
   transition: 0.3s;
   margin: 15px 5px;
   cursor: pointer;
-  width: 100%;
-  min-width: 110px;
-  font-size: 8vw;
+  width: 60%;
+  min-width: 50px;
+  font-size: 3vw;
 }
 
 .red-button {

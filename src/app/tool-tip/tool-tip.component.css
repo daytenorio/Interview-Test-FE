@@ -6,7 +6,7 @@ span[aria-hidden="false"] {
 }
 
 .toolTipText {
-  width: 120px;
+  width: 100px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -20,8 +20,8 @@ span[aria-hidden="false"] {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
-  font-size: 5vw;
-  width: 60%;
+  font-size: 2vw;
+  width: 30%;
 }
 .toolTipContent .toolTipText::after {
   content: "";

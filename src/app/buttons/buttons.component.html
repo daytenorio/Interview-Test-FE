@@ -1,15 +1,13 @@
 <div class="row">
   <div *ngFor="let button of buttons" class="col-md-6 col-xs-12">
-    <input
+    <button
       class="btn {{ button.class }}-button mytooltip"
       id="{{ button.id }}"
-      type="button"
-      value="{{ button.text }}"
       (click)="onClick(button.id)"
       role="button"
-    />
-    <!-- <div class="toolTipContent"> -->
+    >
+      {{ button.text }}
+    </button>
     <app-tool-tip [toolTip]="button.toolTip"></app-tool-tip>
-    <!-- </div> -->
   </div>
 </div>
