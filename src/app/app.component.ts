@@ -23,4 +23,8 @@ export class AppComponent {
   ) {
     if (targetElement !== "button") this.buttons.hideToolTips();
   }
+  @HostListener("window:scroll", ["$event"])
+  scrollHandler(event) {
+    console.debug("Scroll Event");
+  }
 }
